@@ -1,5 +1,21 @@
 html, body {
+    font-style: "Source Sans 3", sans-serif;
     margin: 0;
     padding: 0;
+    background: white;
 }
 
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    width: 375px;
+}
+
+header {
+    height: 67px;
+    border-bottom: 1px solid #C6C6C6;
+    padding-bottom: 18px;
+}
