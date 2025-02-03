@@ -9,6 +9,16 @@ This project highlights the following HTML and CSS concepts:
 - Flexbox
 - Span
 
+Update - 03Feb2025:
+
+This project now also highlights the following JavaScript concepts:
+
+- Array traversal using 'for of'
+- DOM Manipulation using 'innerHTML'
+- Template literals/strings
+- Importing data
+- Exporting data
+
 ## Installation
 To run this project locally:
 
