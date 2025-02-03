@@ -1,30 +1,31 @@
-const posts = [
-    {
-        name: "Vincent van Gogh",
-        username: "vincey1853",
-        location: "Zundert, Netherlands",
-        avatar: "images/avatar-vangogh.jpg",
-        post: "images/post-vangogh.jpg",
-        comment: "just took a few mushrooms lol",
-        likes: 21
-    },
-    {
-        name: "Gustave Courbet",
-        username: "gus1819",
-        location: "Ornans, France",
-        avatar: "images/avatar-courbet.jpg",
-        post: "images/post-courbet.jpg",
-        comment: "i'm feelin a bit stressed tbh",
-        likes: 4
-    },
-        {
-        name: "Joseph Ducreux",
-        username: "jd1735",
-        location: "Paris, France",
-        avatar: "images/avatar-ducreux.jpg",
-        post: "images/post-ducreux.jpg",
-        comment: "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
-        likes: 152
-    }
-]
+import {posts} from "/data.js"
 
+// Test import/export
+// import/export works!
+
+// console.log(posts)
+
+
+
+    /*
+    <div class="post-header flex-post-header">
+        <div>
+            <img class="avatar-img" src="AVATAR" alt="Avatar icon NAME.">
+        </div>
+        <div>
+            <h2 class="mb0">NAME</h2>
+            <p class="mt0">LOCATION</p>
+        </div>
+    </div>
+    <img class="portrait-img" src="/images/post-vangogh.jpg" alt="A portrait of NAME.">
+
+    <div class="icons">
+        <div class="flex-icons">
+            <img class="icons-img" src="/images/icon-heart.png">
+            <img class="icons-img" src="/images/icon-comment.png">
+            <img class="icons-img" src="/images/icon-dm.png">
+        </div>
+        <h2 class="mt0 padding-l">LIKES likes</h2>
+        <p><span class="username padding-l">vincey1853</span> COMMENT</p>
+    </div> 
+    */

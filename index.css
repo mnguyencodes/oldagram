@@ -82,6 +82,11 @@ header {
 .icons-img {
     width: 23px;
     height: 23px;
+    cursor: pointer;
+}
+
+.icons-img:hover {
+    opacity: 0.5;
 }
 
 .padding-l {
