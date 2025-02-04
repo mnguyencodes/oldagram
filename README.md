@@ -23,6 +23,7 @@ This project now also highlights the following JavaScript concepts:
 02/04/2025
 - One event listener on the document object itself
 - Filter
+- Content Delivery Network - Font Awesome icons
 
 ## Installation
 To run this project locally:

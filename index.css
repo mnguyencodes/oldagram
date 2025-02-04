@@ -66,15 +66,19 @@ header {
     display: flex;
     padding: 21px 0 12px 10px;
     gap: 17px;
+    align-items: center;
+    font-size: 22px;
 }
 
-.icons-img {
+.icons-img,
+i {
     width: 23px;
     height: 23px;
     cursor: pointer;
 }
 
-.icons-img:hover {
+.icons-img:hover,
+i:hover {
     opacity: 0.5;
 }
 
@@ -84,6 +88,10 @@ header {
 
 .username {
     font-weight: 700;
+}
+
+.liked {
+    color: red;
 }
 
 /* Utility Classes */
@@ -98,8 +106,4 @@ header {
 
 .border-t {
     border-top: 1px solid #C6C6C6;
-}
-
-.like {
-    background: red;
 }

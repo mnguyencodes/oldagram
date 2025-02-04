@@ -1,8 +1,5 @@
 import {posts} from "/data.js"
 
-// TODO: Use this heart icon tag below instead of the PNG
-/* <i data-like="${post.uuid}" class="fa-solid fa-heart" ${likeIcon}></i> */
-
 const heart = "/images/icon-heart.png"
 const comment = "/images/icon-comment.png"
 const dm = "/images/icon-dm.png"
@@ -26,7 +23,7 @@ function getPostHtml() {
     let postHtml = ""
     let likeIcon = ""
     for (let post of posts) {
-        post.isLiked ? likeIcon = "like" : likeIcon = ""
+        post.isLiked ? likeIcon = "liked" : likeIcon = ""
         postHtml +=
         `<div class="border-t post-header flex-post-header">
             <div>
@@ -41,7 +38,7 @@ function getPostHtml() {
     
         <div class="icons">
             <div class="flex-icons">
-                <img data-like="${post.uuid}" class="icons-img ${likeIcon}" src="${heart}">
+                <i data-like="${post.uuid}" class="fa-solid fa-heart ${likeIcon}"></i>
                 <img class="icons-img" src="${comment}">
                 <img class="icons-img" src="${dm}">
             </div>
