@@ -5,16 +5,6 @@ html, body {
     background: white;
 }
 
-/* Utility Classes */
-
-.mb0 {
-    margin-bottom: 0;
-}
-
-.mt0 {
-    margin-top: 0;
-}
-
 /* Typography */
 
 h2 {
@@ -36,7 +26,6 @@ p {
 
 header {
     height: 67px;
-    border-bottom: 1px solid #C6C6C6;
     padding-bottom: 18px;
 }
 
@@ -95,4 +84,18 @@ header {
 
 .username {
     font-weight: 700;
+}
+
+/* Utility Classes */
+
+.mb0 {
+    margin-bottom: 0;
+}
+
+.mt0 {
+    margin-top: 0;
+}
+
+.border-t {
+    border-top: 1px solid #C6C6C6;
 }
