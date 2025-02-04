@@ -99,3 +99,7 @@ header {
 .border-t {
     border-top: 1px solid #C6C6C6;
 }
+
+.like {
+    background: red;
+}

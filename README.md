@@ -13,11 +13,16 @@ Update - 03Feb2025:
 
 This project now also highlights the following JavaScript concepts:
 
+02/03/2025
 - Array traversal using 'for of'
 - DOM Manipulation using 'innerHTML'
 - Template literals/strings
 - Importing data
 - Exporting data
+
+02/04/2025
+- One event listener on the document object itself
+- Filter
 
 ## Installation
 To run this project locally:

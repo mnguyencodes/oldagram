@@ -1,12 +1,32 @@
 import {posts} from "/data.js"
 
+// TODO: Use this heart icon tag below instead of the PNG
+/* <i data-like="${post.uuid}" class="fa-solid fa-heart" ${likeIcon}></i> */
+
 const heart = "/images/icon-heart.png"
 const comment = "/images/icon-comment.png"
 const dm = "/images/icon-dm.png"
 
+document.addEventListener("click", (e)=>{
+    if (e.target.dataset.like) {
+        handleLikeClick(e.target.dataset.like)
+    }
+})
+
+function handleLikeClick(postId) {
+    const targetPost = posts.filter((post)=>{
+        return post.uuid === postId
+    })[0]
+    targetPost.isLiked ? targetPost.likes-- : targetPost.likes++
+    targetPost.isLiked = !targetPost.isLiked
+    render()
+}
+
 function getPostHtml() {
     let postHtml = ""
+    let likeIcon = ""
     for (let post of posts) {
+        post.isLiked ? likeIcon = "like" : likeIcon = ""
         postHtml +=
         `<div class="border-t post-header flex-post-header">
             <div>
@@ -21,7 +41,7 @@ function getPostHtml() {
     
         <div class="icons">
             <div class="flex-icons">
-                <img class="icons-img" src="${heart}">
+                <img data-like="${post.uuid}" class="icons-img ${likeIcon}" src="${heart}">
                 <img class="icons-img" src="${comment}">
                 <img class="icons-img" src="${dm}">
             </div>
